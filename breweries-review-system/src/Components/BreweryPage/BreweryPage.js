@@ -24,6 +24,13 @@ const BreweryPage = ({ search,sortBy}) => {
     <h5>city: {breweries?.city}</h5><br />
     <h5>Address: {breweries?.street}</h5><br />
     <h5>Website: {breweries?.website_url}</h5>
+     <br></br>
+     <br></br>
+    <input
+      type="text"
+      placeholder="Add Rating"
+   />
+    <button>Submit</button>
     </div>
   )
 }
