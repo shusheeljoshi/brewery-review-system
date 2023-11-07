@@ -18,6 +18,7 @@ const SearchPageHome = () => {
         setSearch(state)
     }
   return (
+    
     <div>
         <select value={sortBy} onChange={onSlectHandle} >
             {sortby.map(el=>(
@@ -25,14 +26,16 @@ const SearchPageHome = () => {
             ))}
         </select>
     <input
+      className="search-input"
       type="text"
       placeholder={`Search Breweries ${sortBy}`}
       value={state}
       onChange={handleSearchChange}
     />
-    <button onClick={searchHandle}>Search</button>
+    <button className='search-button' onClick={searchHandle}>Search</button>
     <BreweryPage search={search} sortBy={sortBy}/>
-  </div>                 
+  </div>   
+               
   )
 }
 

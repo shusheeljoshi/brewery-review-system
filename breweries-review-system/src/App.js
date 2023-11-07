@@ -3,14 +3,15 @@ import './App.css';
 import LoginSignupPage from './Components/LoginSignupPage/LoginSignupPage';
 import SearchPageHome from './Components/SearchPageHome/SearchPageHome';
 import { Routes, Route } from "react-router-dom"
-function App() {
+
+function App() {   
   return (
     <div>
-      <Routes>
+    <Routes>
       <Route path="/" element={<SearchPageHome />} />
       <Route path='/signup' element={<LoginSignupPage />} />
-    </Routes>
-     {/* <SearchPageHome />  */}
+    </Routes>
+     <LoginSignupPage />  
     </div>
 
 
