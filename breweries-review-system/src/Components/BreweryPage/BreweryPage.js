@@ -17,7 +17,7 @@ const BreweryPage = ({ search,sortBy}) => {
      
      
   return (
-   <div>
+   <div style={{marginTop:30}}>
     <h5>Name: {breweries?.name}</h5><br />
     <h5>phone: {breweries?.phone}</h5><br />
     <h5>state: {breweries?.state}</h5><br />

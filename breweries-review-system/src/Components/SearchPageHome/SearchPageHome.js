@@ -19,7 +19,8 @@ const SearchPageHome = () => {
     }
   return (
     
-    <div>
+    <div style={{display:"flex",justifyContent:"center", backgroundColor:" #ffad06", marginBottom: "50px"}}>
+        <div style={{marginTop:50}}>
         <select value={sortBy} onChange={onSlectHandle} >
             {sortby.map(el=>(
                 <option key={el} onClick={()=>console.log(el)}>{el}</option>
@@ -34,7 +35,8 @@ const SearchPageHome = () => {
     />
     <button className='search-button' onClick={searchHandle}>Search</button>
     <BreweryPage search={search} sortBy={sortBy}/>
-  </div>   
+  </div>
+    </div>   
                
   )
 }
